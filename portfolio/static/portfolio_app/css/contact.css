@@ -1,0 +1,233 @@
+/* Add custom CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+  }
+  
+  .logo {
+    display: inline-block;
+    margin: 0 10px; /* Add space around the logo */
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-menu {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #ffd700;
+  }
+
+/* Contact Section styles */
+.contact {
+    padding: 60px 0;
+  }
+  
+  .contact .container {
+    width: 960px; /* Set container width to 960px */
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  .contact .section-title h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact .section-title p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .contact .info {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact .info h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contact .info p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .contact .info iframe {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .contact .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .contact .form-control:focus {
+    border-color: #007bff;
+  }
+  
+  .contact .text-center {
+    margin-top: 20px;
+  }
+  
+  .contact .text-center button {
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact .text-center button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact .my-3 {
+    text-align: center;
+  }
+  
+  .contact .loading,
+  .contact .error-message,
+  .contact .sent-message {
+    display: none;
+  }
+  
+  .contact .error-message {
+    color: #dc3545;
+  }
+  
+  .contact .sent-message {
+    color: #28a745;
+  }
+  
+  /* Footer styles */
+  #footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #footer a {
+    color: #fff;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  
+  .back-to-top.active {
+    transform: translateY(-50px);
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .logo {
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .nav-menu {
+      display: block;
+      text-align: center;
+    }
+    
+    .nav-menu ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+
+  /* Adjust form styles for screens smaller than 960px */
+@media (max-width: 960px) {
+    .php-email-form {
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .text-center button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+  

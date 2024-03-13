@@ -1,52 +1,68 @@
 <!-- portfolio/templates/portfolio/home.html -->
-{% load static %}
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Dagwan Portfolio</title>
     <meta content name="description">
     <meta content name="keywords">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'portfolio_app/images/favicon.png' %}">
-
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"> -->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
-    <!-- ======= Header ======= -->
-    <header id="header">
-        <div class="d-flex flex-column">
-            <div class="profile">
-                
-                <img src="{% static 'images/profile-img.jpg' %}" alt="Profile Image" class="img-fluid rounded-circle">
-                <h1 class="text-light">Dagwan Pan'an Danladi</h1>
-                <p class="text-light"><em>FullStack Developer</em></p>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://web.facebook.com/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                </div>
-            </div>
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-                    <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-code-block"></i> <span>Projects</span></a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-        </div>
-    </header><!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="100">
-            <h1>Welcome to My Portfolio</h1>
-            <h2>I'm Dagwan, a FullStack Developer</h2>
-            <a href="#about" class="btn-get-started scrollto">Get to Know Me</a>
+<body>
+    
+ <!-- ======= Header ======= -->
+ <header id="header">
+    <div class="header-container">
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <div class="logo">
+                    <!-- <img src="{% static 'images/apple-touch-icon.png' %}" alt="Logo"> -->
+                    <img src="images/apple-touch-icon.png" alt="Logo">
+                </div>
+                <li><a href="home" class="nav-link scrollto">home</a></li>
+                <li><a href="#about" class="nav-link scrollto">About</a></li>
+                <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
+                <li><a href="#services" class="nav-link scrollto">Services</a></li>
+                <li><a href="#projects" class="nav-link scrollto">Projects</a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+    </div>
+</header><!-- End Header -->
+
+
+    <main>
+        <div class="profile">
+            <!-- <img src="{% static 'images/profile-img.jpg' %}" alt="Profile Image" class="img-fluid rounded-circle"> -->
+            <img src="images/profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+            <h1>Dagwan Pan'an Danladi</h1>
+            <p><em>FullStack Developer</em></p>
+            <div class="social-links">
+                <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a href="https://web.facebook.com/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><i
+                        class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </div>
         </div>
-    </section><!-- End Hero -->
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex align-items-center">
+            <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="100">
+                <h1 class="animate__animated animate__bounceInDown">Welcome to My Portfolio</h1>
+                <h2 class="animate__animated animate__fadeIn">I'm Dagwan, a FullStack Developer</h2>
+                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get to Know Me</a>
+            </div>
+        </section><!-- End Hero -->
+    </main>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -60,9 +76,10 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-    <script src="{% static 'js/home.js' %}"></script>
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
 
-
+    <!-- <script src="{% static 'js/home.js' %}"></script> -->
+    <script src="js/home.js"></script>
 </body>
+
 </html>

@@ -7,45 +7,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dagwan Portfolio - Services</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
-
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"> -->
+    <link rel="stylesheet" type="text/css" href="css/services.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
+    
+ <!-- ======= Header ======= -->
+ <header id="header">
+    <div class="header-container">
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-        <div class="d-flex flex-column">
-            <div class="profile">
-                <img src="assets/img/profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html">Dagwan Pan'an Danladi</a></h1>
-                <p class="text-light"><a href="index.html"><em>FullStack Developer</em></a></p>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://web.facebook.com/" class="facebook" target="_blank"><i
-                            class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/" class="instagram" target="_blank"><i
-                            class="bx bxl-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i
-                            class="bx bxl-linkedin"></i></a>
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <div class="logo">
+                    <!-- <img src="{% static 'images/apple-touch-icon.png' %}" alt="Logo"> -->
+                    <img src="images/apple-touch-icon.png" alt="Logo">
                 </div>
-            </div>
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
-                            <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
-                    </li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
-                            <span>Contact</span></a></li>
-                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
-                            <span>Services</span></a></li>
-                    <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-code-block"></i>
-                            <span>Projects</span></a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
-        </div>
-    </header><!-- End Header -->
+                <li><a href="home" class="nav-link scrollto">home</a></li>
+                <li><a href="#about" class="nav-link scrollto">About</a></li>
+                <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
+                <li><a href="#services" class="nav-link scrollto">Services</a></li>
+                <li><a href="#projects" class="nav-link scrollto">Projects</a></li>
+            </ul>
+        </nav><!-- .nav-menu -->
+    </div>
+</header><!-- End Header -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -106,7 +95,8 @@
             </div>
         </div>
     </footer><!-- End Footer -->
-    <script src="{% static 'js/services.js' %}"></script>
+    <!-- <script src="{% static 'js/services.js' %}"></script> -->
+    <script src="js/services.js"></script>
 
 </body>
 
