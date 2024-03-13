@@ -1,0 +1,113 @@
+<!-- portfolio/templates/portfolio/services.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagwan Portfolio - Services</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="assets/img/profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Dagwan Pan'an Danladi</a></h1>
+                <p class="text-light"><a href="index.html"><em>FullStack Developer</em></a></p>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://web.facebook.com/" class="facebook" target="_blank"><i
+                            class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="instagram" target="_blank"><i
+                            class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i
+                            class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                    </li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                            <span>Contact</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                            <span>Services</span></a></li>
+                    <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-code-block"></i>
+                            <span>Projects</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="section-title">
+                <h2>Services</h2>
+            </div>
+
+            <div class="row">
+                <!-- Service Box 1 -->
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+                    <div class="icon"><i class="bi bi-briefcase"></i></div>
+                    <h4 class="title"><a href="#">Organisational Skills</a></h4>
+                    <!-- Service Description -->
+                    <p class="description">I'm a startup Full Stack Developer with
+                        a strong appetite for learning technology. My foundational
+                        knowledge includes Python, MySQL, JavaScript, HTML/CSS, PHP
+                        and Flask,Node.js/Express. I have experience working
+                        collaboratively with international friends, showcasing
+                        teamwork and leadership skills.</p>
+                </div>
+                <!-- Service Box 2 -->
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                    <h4 class="title"><a href="#">Management Skills</a></h4>
+                    <!-- Service Description -->
+                    <p class="description">I strategize and implement efficient
+                        approaches for managing materials to enhance the company's
+                        professionalism and value proposition, ultimately attracting
+                        a larger customer base.</p>
+                </div>
+                <!-- Service Box 3 -->
+                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                    <h4 class="title"><a href="#">Collaboration Skills</a></h4>
+                    <!-- Service Description -->
+                    <p class="description">I possess strong teamwork and
+                        collaboration skills, demonstrating effective leadership in
+                        various situations. Complementing these qualities, I have a
+                        solid background in Business Management through my
+                        education.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Services Section -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Dagwan Portfolio</span></strong>
+            </div>
+            <div class="credits">
+                Designed by <a href="https://dagwan.github.io/portfolio/">Dagwan</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <script src="{% static 'js/services.js' %}"></script>
+
+</body>
+
+</html>

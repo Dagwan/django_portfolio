@@ -1,0 +1,112 @@
+<!-- portfolio/templates/portfolio/projects.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagwan Portfolio - Projects</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <img src="assets/img/profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Dagwan Pan'an Danladi</a></h1>
+                <p class="text-light"><a href="index.html"><em>FullStack Developer</em></a></p>
+                <div class="social-links mt-3 text-center">
+                    <a href="https://twitter.com/" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://web.facebook.com/" class="facebook" target="_blank"><i
+                            class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="instagram" target="_blank"><i
+                            class="bx bxl-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="linkedin" target="_blank"><i
+                            class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                    </li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i>
+                            <span>Contact</span></a></li>
+                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>
+                            <span>Services</span></a></li>
+                    <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-code-block"></i>
+                            <span>Projects</span></a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+
+ <!-- ======= Projects Section ======= -->
+ <section id="projects" class="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="row no-gutters">
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+                data-aos="fade-up" data-aos-delay="100">
+                <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="004"
+                        data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects:</strong> <br>Temple Inn and Suites, <br>Vickey
+                        Online Store, <br>Dan Community Chambers, Dan Nursery &
+                        Primary School Abuja, and <br>Dan Portfolio</b></p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+                data-aos="fade-up" data-aos-delay="200">
+                <div class="count-box">
+                    <i class="bi bi-headset"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="24"
+                        data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hours Of Support:</strong> <br>24/7 of Support
+                        through Zoom, Github, Microsoft Team, Slack/Discord, etc.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch"
+                data-aos="fade-up" data-aos-delay="300">
+                <div class="count-box">
+                    <i class="bi bi-people"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="5"
+                        data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hard Workers:</strong><br> Team Members include:
+                        Davi From Brazil, Diego From Argentina, Felipe From Portugal
+                        and Dagwan From Nigeria repsectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Projects Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Dagwan Portfolio</span></strong>
+            </div>
+            <div class="credits">
+                Designed by <a href="https://dagwan.github.io/portfolio/">Dagwan</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <script src="{% static 'js/projects.js' %}"></script>
+
+</body>
+
+</html>
