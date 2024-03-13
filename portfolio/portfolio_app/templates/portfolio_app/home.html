@@ -9,10 +9,8 @@
     <title>Dagwan Portfolio</title>
     <meta content name="description">
     <meta content name="keywords">
-    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"> -->
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio_app/css/home.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'portfolio_app/images/apple-touch-icon.png' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
@@ -26,9 +24,10 @@
             <ul>
                 <div class="logo">
                     <!-- <img src="{% static 'images/apple-touch-icon.png' %}" alt="Logo"> -->
-                    <img src="images/apple-touch-icon.png" alt="Logo">
+                    <img src="{% static 'portfolio_app/images/apple-touch-icon.png' %}" alt="Logo">
+                    <!-- <img src="images/apple-touch-icon.png" alt="Logo"> -->
                 </div>
-                <li><a href="home" class="nav-link scrollto">home</a></li>
+                <li><a href="{home}" class="nav-link scrollto">Home</a></li>
                 <li><a href="#about" class="nav-link scrollto">About</a></li>
                 <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
                 <li><a href="#services" class="nav-link scrollto">Services</a></li>
@@ -42,7 +41,7 @@
     <main>
         <div class="profile">
             <!-- <img src="{% static 'images/profile-img.jpg' %}" alt="Profile Image" class="img-fluid rounded-circle"> -->
-            <img src="images/profile-img.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+            <img src="{% static 'portfolio_app/images/profile-img.jpg' %}" alt="Profile Image" class="img-fluid rounded-circle">
             <h1>Dagwan Pan'an Danladi</h1>
             <p><em>FullStack Developer</em></p>
             <div class="social-links">
@@ -77,9 +76,7 @@
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
-
-    <!-- <script src="{% static 'js/home.js' %}"></script> -->
-    <script src="js/home.js"></script>
+    <script src="{% static 'portfolio_app/js/home.js' %}"></script>
 </body>
 
 </html>

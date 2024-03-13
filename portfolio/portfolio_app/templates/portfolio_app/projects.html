@@ -7,10 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dagwan Portfolio - Projects</title>
-    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}"> -->
-    <link rel="stylesheet" type="text/css" href="css/projects.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio_app/css/projects.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'portfolio_app/images/apple-touch-icon.png' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
@@ -23,14 +21,13 @@
         <nav id="navbar" class="nav-menu navbar">
             <ul>
                 <div class="logo">
-                    <!-- <img src="{% static 'images/apple-touch-icon.png' %}" alt="Logo"> -->
-                    <img src="images/apple-touch-icon.png" alt="Logo">
+                    <img src="{% static 'portfolio_app/images/apple-touch-icon.png' %}" alt="Logo">
                 </div>
-                <li><a href="home" class="nav-link scrollto">home</a></li>
-                <li><a href="#about" class="nav-link scrollto">About</a></li>
-                <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
-                <li><a href="#services" class="nav-link scrollto">Services</a></li>
-                <li><a href="#projects" class="nav-link scrollto">Projects</a></li>
+                <li><a href="{% url 'home' %}" class="nav-link scrollto">Home</a></li>
+                <li><a href="{% url 'about' %}" class="nav-link scrollto">About</a></li>
+                <li><a href="{% url 'contact' %}" class="nav-link scrollto">Contact</a></li>
+                <li><a href="{% url 'services' %}" class="nav-link scrollto">Services</a></li>
+                <li><a href="{% url 'projects' %}" class="nav-link scrollto">Projects</a></li>
             </ul>
         </nav><!-- .nav-menu -->
     </div>
@@ -94,7 +91,7 @@
             </div>
         </div>
     </footer><!-- End Footer -->
-    <script src="{% static 'js/projects.js' %}"></script>
+    <script src="{% static 'portfolio_app/js/projects.js' %}"></script>
 
 </body>
 
