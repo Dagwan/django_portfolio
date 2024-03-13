@@ -27,11 +27,11 @@
                     <img src="{% static 'portfolio_app/images/apple-touch-icon.png' %}" alt="Logo">
                     <!-- <img src="images/apple-touch-icon.png" alt="Logo"> -->
                 </div>
-                <li><a href="{home}" class="nav-link scrollto">Home</a></li>
-                <li><a href="#about" class="nav-link scrollto">About</a></li>
-                <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
-                <li><a href="#services" class="nav-link scrollto">Services</a></li>
-                <li><a href="#projects" class="nav-link scrollto">Projects</a></li>
+                <li><a href="{% url 'home' %}" class="nav-link scrollto">Home</a></li>
+                <li><a href="{% url 'about' %}" class="nav-link scrollto">About</a></li>
+                <li><a href="{% url 'contact' %}" class="nav-link scrollto">Contact</a></li>
+                <li><a href="{% url 'services' %}" class="nav-link scrollto">Services</a></li>
+                <li><a href="{% url 'projects' %}" class="nav-link scrollto">Projects</a></li>                
             </ul>
         </nav><!-- .nav-menu -->
     </div>
@@ -58,7 +58,7 @@
             <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="100">
                 <h1 class="animate__animated animate__bounceInDown">Welcome to My Portfolio</h1>
                 <h2 class="animate__animated animate__fadeIn">I'm Dagwan, a FullStack Developer</h2>
-                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get to Know Me</a>
+                <a href="{% url 'about' %}" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get to Know Me</a>
             </div>
         </section><!-- End Hero -->
     </main>
