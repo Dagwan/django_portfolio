@@ -21,7 +21,7 @@
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
                     <div class="logo">
-                        <img src="{% static 'portfolio_app/images/apple-touch-icon.png' %}" alt="Logo">
+                        <a href="{% url 'home' %}" ><img src="{% static 'portfolio_app/images/apple-touch-icon.png' %}" alt="Logo"></a>
                     </div>
                     <li><a href="{% url 'home' %}" class="nav-link scrollto">Home</a></li>
                     <li><a href="{% url 'about' %}" class="nav-link scrollto">About</a></li>
