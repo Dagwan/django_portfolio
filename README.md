@@ -10,7 +10,7 @@ The primary purpose of developing this web application is to create a centralize
 
 # Video Demonstration
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/fSeEwNSDgjs)
 
 # Starting the Test Server
 To start the test server on your computer and view the first page of the app, follow these steps:
